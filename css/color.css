@@ -1,0 +1,78 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --color-text: #2a2c45;
+  --color-text-dark-grey: #666666;
+  --color-text-grey: #999999;
+
+  --color-main-lighten: #f34723;
+  --color-main-light: #cc0605;
+  --color-main: #bc000e;
+  --color-main-dark: #a91d11;
+
+  --color-accent-green: #30bf39;
+  --color-accent-blue: #26a5e4;
+  --color-accent-red: #d11616;
+
+  --color-accent-grey-light: #cacaca;
+  --color-accent-grey-lighten: #ececec;
+
+  --color-transparent: transparent;
+
+  --transparent-purple: rgba(194, 131, 243, 0.4);
+  --transparent-grey-85: rgba(255, 255, 255, 0.85);
+  --transparent-grey-2: rgba(255, 255, 255, 0.2);
+  --transparent-black-9: rgba(0, 0, 0, 0.9);
+  --transparent-black-5: rgba(0, 0, 0, 0.5);
+
+  --padding-1024: 50px;
+  --padding-440: 15px;
+
+  --gap: 50px;
+  --card-count: 3;
+}
+.nav__link {
+  position: relative;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  transition: color 0.3s ease-in-out;
+  color: var(--color-white);
+
+  transition-property: color, outline-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  height: 2px;
+  background-color: var(--color-main);
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease-in-out;
+  transform: scale(0);
+  transition-property: opacity, transform, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.nav__link:hover:not(:active):not(:focus-visible)::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav__link:focus-visible {
+  outline-color: var(--color-main);
+}
+
+.nav__link:active:not(:focus-visible) {
+  color: var( --color-main);
+}
+
+.nav__link:active:not(:focus-visible)::after {
+  background-color: var( --color-main);
+}

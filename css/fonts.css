@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local("OpenSans-Bold"), url('../fonts/OpenSans-Bold.woff2') format("woff2"),
+  url('../fonts/OpenSans-Bold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("OpenSans-SemiBold"), url('../fonts/OpenSans-SemiBold.woff2') format("woff2"),
+  url('../fonts/OpenSans-SemiBold.woff') format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("OpenSans-Regular"), url('../fonts/OpenSans-Regular.woff2') format("woff2"),
+  url('../fonts/OpenSans-Regular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.text-decor-grey {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--color-text-grey);
+}
+
+.text-address {
+  font-style: normal;
+}
+
+.text-accent-decor {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  color: var(--color-text);
+}
+
+
+.title-decor {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 65px;
+  color: var(--color-text);
+}
+
+.text-decor {
+  margin: 0;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-text);
+}
+
+.text-decor-projects {
+  margin: 0;
+  width: 67%;
+  margin-bottom: 30px;
+}
+
+.text-accent-decor {
+  margin-bottom: 15px;
+}
+
+.text-decor--projects {
+  margin-bottom: 25px;
+}
+.text-decor--purple {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+.text-decor-grey {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  color: var(--color-text-grey);
+}
+@media (max-width: 440px) {
+
+  .title-decor {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+  }
+
+  .text-decor {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .text-decor-grey {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .text-accent-decor {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+  }
+}

@@ -1,0 +1,13 @@
+.reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .reset-btn {
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }

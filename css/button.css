@@ -1,0 +1,192 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px 33px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--white);
+  border: 3px solid var(--color-main);
+  background-color: var(--color-main);
+  border-radius: 100px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 2px solid var(--color-main-light);
+  border-radius: 100px;
+  opacity: 0;
+  z-index: 100;
+}
+
+.btn:focus-visible:not(:hover, :active)::after {
+  border: 3px solid var(--color-main);
+  opacity: 1;
+}
+
+.btn:active:not(:focus-visible) {
+  background-color: var(--color-main-dark);
+}
+
+.contact__link {
+  outline: none;
+}
+
+.social__link svg {
+  fill: var(--color-accent-grey-light);
+  outline: none;
+  -webkit-transition: fill 0.2s ease-in-out;
+  -o-transition: fill 0.2s ease-in-out;
+  transition: fill 0.2s ease-in-out;
+}
+
+.social__link:focus-visible svg {
+  fill: var(--white);
+}
+
+.social__link:active:not(:focus-visible) svg {
+  fill: var(--color-main);
+}
+
+.form__decor:focus-visible:not(:hover, :active) {
+  background-color: var(--color-accent-grey-lighten);
+  border-color: 1px solid var(--color-text);
+  color: var(--color-text-grey);
+}
+
+.form__decor:active:not(:focus-visible) {
+  border-color: 1px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.form__btn {
+  position: relative;
+  cursor: pointer;
+  border: 2px solid var(--color-main);
+  display: inline-block;
+  padding: 11px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  border-radius: 100px;
+  color: var(--color-main);
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form__btn-mobile {
+  display: none;
+  padding: 12px 35px;
+  border: 2px solid var(--color-main);
+  background-color: transparent;
+  border-radius: 100px;
+  color: var(--color-main);
+}
+
+.form__btn::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 2px solid var(--color-main-light);
+  border-radius: 100px;
+  background-color: transparent;
+  z-index: -10;
+  opacity: 0;
+}
+
+.form__btn:focus-visible:not(:hover, :active)::after {
+  -webkit-transition: border 1s ease-in-out;
+  -o-transition: border 1s ease-in-out;
+  transition: border 1s ease-in-out;
+  opacity: 1;
+}
+
+.form__btn:active:not(:focus-visible) {
+  background-color: var(--color-main-dark);
+  border-color: var(--color-main-lighten);
+  color: var(--white);
+}
+
+.width-decor-text {
+  max-width: 1080px;
+}
+
+.contact__link svg {
+  display: flex;
+  outline: none;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -o-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.contact__link:focus-visible:not(:hover, :active) svg {
+  opacity: 0.4;
+}
+
+.contact__link:active:not(:focus-visible) svg {
+  border-radius: 100%;
+  border: 1px solid var(--color-main);
+}
+
+@media (any-hover: hover) {
+
+  .btn:hover {
+    border: 3px solid var(--color-main-lighten);
+  }
+
+  .nav__link:hover {
+    color: var(--color-main-light);
+  }
+ 
+  .social__link:hover svg {
+    fill: var(--white);
+  }
+
+  .nav__link:hover,
+  .nav__link:hover svg {
+    color: var(--color-main-light);
+    fill: var(--color-main-light);
+  }
+
+  .events__link:hover {
+    color: var(--color-main-dark);
+  }
+
+  .events__link:hover::after {
+    background-color: var(--color-main-dark);
+  }
+
+  .contact__link:hover svg {
+    opacity: 0.4;
+  }
+
+  .form__decor:hover {
+    background-color: var(--color-accent-grey-lighten);
+    color: var(--color-text-grey);
+  }
+
+  .form__btn:hover {
+    background-color: var(--color-main);
+    color: var(--white);
+  }
+
+  .social__item:hover svg {
+    fill: var(--white);
+  }
+}
